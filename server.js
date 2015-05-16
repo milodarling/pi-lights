@@ -9,7 +9,7 @@ app.get('/lights', function(req, res){
         gpio.open(pin, 'output', function(err) {     // Open pin for output
         gpio.write(pin, (turnOff ? 0 : 1), function() {          // Set pin high (1)
                 gpio.close(pin);                     // Close pin
-                res.end("Success, lights are " + (turnOff ? "off" : "on"));
+                res.end(JSON.stringify({'Success': true, 'state': !turnOff}));
         });
         });
 });
