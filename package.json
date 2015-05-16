@@ -1,0 +1,25 @@
+{
+  "name": "pi-lights",
+  "version": "0.0.1",
+  "description": "Control your lights with a Raspberry Pi",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/milodarling/pi-lights.git"
+  },
+  "keywords": [
+    "Raspberry Pi"
+  ],
+  "author": "Milo Darling",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/milodarling/pi-lights/issues"
+  },
+  "dependencies": {
+    "express": "^4.12.2",
+    "pi-gpio": "^0.0.7"
+  }
+}
